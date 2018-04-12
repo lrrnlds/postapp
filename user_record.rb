@@ -29,6 +29,7 @@ class User_Record
    print "Here is your token:  #{access_token} \n"
 
    sign_in(user.email, user.access_token)
+   return access_token
   end
 
   def self.sign_in(email, access_token)
